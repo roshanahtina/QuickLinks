@@ -14,7 +14,8 @@ https://on24static.akamaized.net/event/43/33/85/8/rt/1/documents/resourceList169
 https://on24static.akamaized.net/event/43/38/49/7/rt/1/documents/resourceList1698414414376/rhcsa911698414413682.pdf
 
 - Paste Bin:
-https://pastebin.com/jxEUv9Kc
+https://pastebin.com/jxEUv9Kc - CKA day1 oct 23
+https://pastebin.com/TJtQjGDk - RHCSA nov23 day2
 
 - RegEx:
 https://learning.oreilly.com/library/view/mastering-regular-expressions/0596528124/
