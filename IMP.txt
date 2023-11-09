@@ -22,3 +22,8 @@ https://pastebin.com/mDGGV9H2 - scripting nov23
 https://learning.oreilly.com/library/view/mastering-regular-expressions/0596528124/
 https://learning.oreilly.com/library/view/sed-awk/1565922255/
 
+- RPMDB busted
+sudo mkdir /var/lib/rpm/backup
+sudo cp -a /var/lib/rpm/__db* /var/lib/rpm/backup/
+sudo rm -f /var/lib/rpm/__db.[0-9][0-9]*
+sudo rpm --quiet -qa; sudo rpm --rebuilddb; sudo yum clean all
