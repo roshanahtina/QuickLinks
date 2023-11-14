@@ -1,6 +1,9 @@
 - IBBBM Prep Course:
 https://ibm-cloud-prep.yourlearning.ibm.com
 
+- luth-LinuxUnderTheHood
+https://on24static.akamaized.net/event/43/46/99/7/rt/1/documents/resourceList1699274238616/luthnov231699274238616.pdf
+
 - Linux Fundamentals BootCamp:
 https://on24static.akamaized.net/event/43/33/82/1/rt/1/documents/resourceList1697480993618/linuxfundamentals516231690989321545.pdf
 https://on24static.akamaized.net/event/43/33/82/2/rt/1/documents/resourceList1697482662436/linuxfundamentals516231690989321545.pdf
@@ -16,14 +19,14 @@ https://on24static.akamaized.net/event/43/38/49/7/rt/1/documents/resourceList169
 - *upcoming live courses*
 https://github.com/roshanahtina/rhcsa/blob/master/resources.txt
 
+- RegEx:
+https://learning.oreilly.com/library/view/mastering-regular-expressions/0596528124/
+https://learning.oreilly.com/library/view/sed-awk/1565922255/
+
 - Paste Bin:
 https://pastebin.com/jxEUv9Kc - CKA day1 oct 23
 https://pastebin.com/TJtQjGDk - RHCSA nov23 day2
 https://pastebin.com/mDGGV9H2 - scripting nov23
-
-- RegEx:
-https://learning.oreilly.com/library/view/mastering-regular-expressions/0596528124/
-https://learning.oreilly.com/library/view/sed-awk/1565922255/
 
 - VMware Hands-on Labs
 https://discovery.vmware.com/page/ds-hands-on-labs?menu=overview
