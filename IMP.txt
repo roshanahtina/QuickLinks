@@ -47,4 +47,30 @@ sudo cp -a /var/lib/rpm/__db* /var/lib/rpm/backup/
 sudo rm -f /var/lib/rpm/__db.[0-9][0-9]*
 sudo rpm --quiet -qa; sudo rpm --rebuilddb; sudo yum clean all
 
-- 
+- SAR: dnf install sysstat -y
+[root@~]# systemctl list-unit-files -t timer
+UNIT FILE                      STATE    PRESET  
+dnf-makecache.timer            enabled  enabled 
+fstrim.timer                   disabled disabled
+insights-client.timer          disabled disabled
+logrotate.timer                enabled  enabled 
+nm-cloud-setup.timer           enabled  disabled
+sysstat-collect.timer          enabled  disabled
+sysstat-summary.timer          enabled  disabled
+systemd-sysupdate-reboot.timer disabled disabled
+systemd-sysupdate.timer        disabled disabled
+systemd-tmpfiles-clean.timer   static   -       
+
+10 unit files listed.
+[root@~ ~]# systemctl status sysstat-collect.timer
+○ sysstat-collect.timer - Run system activity accounting tool every 10 minutes
+     Loaded: loaded (/usr/lib/systemd/system/sysstat-collect.timer; enabled; p>
+     Active: inactive (dead)
+    Trigger: n/a
+   Triggers: ● sysstat-collect.service
+[root@ ~]# systemctl start sysstat-collect.timer
+[root@ ~]# systemctl start sysstat-collect.service
+[root@ ~]# systemctl status sysstat-collect.timer
+● sysstat-collect.timer - Run system activity accounting tool every 10 minutes
+     Loaded: loaded (/usr/lib/systemd/system/sysstat-collect.timer; enabled; p>
+     Active: active (running) since Tue 2023-11-14 16:29:05 UTC; 1min 13s ago
