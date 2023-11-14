@@ -7,6 +7,9 @@ https://on24static.akamaized.net/event/43/46/99/7/rt/1/documents/resourceList169
 - Linux Performance Optimization
 https://on24static.akamaized.net/event/43/47/01/0/rt/1/documents/resourceList1698335954860/linuxperformance73231698335953946.pdf
 
+REDHAT DOCS: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_for_real_time/8/html/optimizing_rhel_8_for_real_time_for_low_latency_operation/index
+
+
 - Linux Fundamentals BootCamp:
 https://on24static.akamaized.net/event/43/33/82/1/rt/1/documents/resourceList1697480993618/linuxfundamentals516231690989321545.pdf
 https://on24static.akamaized.net/event/43/33/82/2/rt/1/documents/resourceList1697482662436/linuxfundamentals516231690989321545.pdf
