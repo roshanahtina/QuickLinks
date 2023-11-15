@@ -11,7 +11,8 @@ https://on24static.akamaized.net/event/43/47/01/0/rt/1/documents/resourceList169
 https://on24static.akamaized.net/event/43/47/02/6/rt/1/documents/resourceList1698935226186/linuxtroubleshooting613221698935226186.pdf
 https://github.com/roshanahtina/Linux-Troubleshooting
 
-REDHAT DOCS: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_for_real_time/8/html/optimizing_rhel_8_for_real_time_for_low_latency_operation/index
+
+-> REDHAT DOCS: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_for_real_time/8/html/optimizing_rhel_8_for_real_time_for_low_latency_operation/index
 
 
 - Linux Fundamentals BootCamp:
