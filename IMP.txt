@@ -10,7 +10,21 @@ https://on24static.akamaized.net/event/43/47/01/0/rt/1/documents/resourceList169
 - Linux Troubleshooting
 https://on24static.akamaized.net/event/43/47/02/6/rt/1/documents/resourceList1698935226186/linuxtroubleshooting613221698935226186.pdf
 https://github.com/roshanahtina/Linux-Troubleshooting
-
+ -> Fixing boot problem:
+     Login Shell
+     |
+     Services
+     | <- systemd.unit=rescue.target
+     Early boot
+     | <- systemd.unit=emergency.target
+     init=systemd
+     | <- rd.break (RH) 
+     | <- init=/bin/bash
+     initramfs kernel
+     | 
+     GRUB2
+     | <- rescue disk
+     Firmware (BIOS/EFI|UEFI)
 
 -> REDHAT DOCS: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_for_real_time/8/html/optimizing_rhel_8_for_real_time_for_low_latency_operation/index
 
