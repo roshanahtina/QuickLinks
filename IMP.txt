@@ -54,6 +54,8 @@ https://on24static.akamaized.net/event/43/33/85/8/rt/1/documents/resourceList169
 - Mastering-Bash-Shell-Scripting-Automate-your-daily-tasks
 https://github.com/roshanahtina/Mastering-Bash-Shell-Scripting-Automate-your-daily-tasks/blob/main/Section%202/Assignment-01-Solution-Script/assignment01-report-solution.sh
 
+- Master title style
+https://on24static.akamaized.net/event/43/47/05/7/rt/1/documents/resourceList1699971479321/containerssep231699971479321.pdf
 
 - RegEx:
 https://learning.oreilly.com/library/view/mastering-regular-expressions/0596528124/
