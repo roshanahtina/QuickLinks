@@ -57,10 +57,14 @@ https://github.com/roshanahtina/Mastering-Bash-Shell-Scripting-Automate-your-dai
 -> Master title style
 https://on24static.akamaized.net/event/43/47/05/7/rt/1/documents/resourceList1699971479321/containerssep231699971479321.pdf
 
--> AWS Solutions Architect - Associate Certification Crash Course (SAA-C03)
+-> AWS Solutions Architect - Associate Certification Crash Course (SAA-C03):
 https://on24static.akamaized.net/event/43/53/43/6/rt/1/documents/resourceList1699885803277/awssolutionsarchitectassociatecertificationsaac03latest1699885803277.pdf
-
+https://github.com/arpcefxl/aws-saa-certification
+- AWS Certified Solutions Architect - Professional (SAP-C02):
+https://learning.oreilly.com/course/aws-certified-solutions/9780138319205/ 
 https://aws.amazon.com/well-architected-tool/
+- AWS Cheat Sheets:
+https://tutorialsdojo.com/
 
 -> RegEx:
 https://learning.oreilly.com/library/view/mastering-regular-expressions/0596528124/
