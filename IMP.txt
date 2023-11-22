@@ -57,6 +57,7 @@ https://github.com/roshanahtina/Mastering-Bash-Shell-Scripting-Automate-your-dai
 -> Master title style
 https://on24static.akamaized.net/event/43/47/05/7/rt/1/documents/resourceList1699971479321/containerssep231699971479321.pdf
 
+:: AWS ::
 -> AWS Solutions Architect - Associate Certification Crash Course (SAA-C03):
 https://on24static.akamaized.net/event/43/53/43/6/rt/1/documents/resourceList1699885803277/awssolutionsarchitectassociatecertificationsaac03latest1699885803277.pdf
 https://github.com/arpcefxl/aws-saa-certification
@@ -75,11 +76,11 @@ https://pastebin.com/jxEUv9Kc - CKA day1 oct 23
 https://pastebin.com/TJtQjGDk - RHCSA nov23 day2
 https://pastebin.com/mDGGV9H2 - scripting nov23
 
-::VMware::
+:: VMware ::
 -> VMware Hands-on Labs
 https://discovery.vmware.com/page/ds-hands-on-labs?menu=overview
 
-::Kubernetes::
+:: Kubernetes ::
 -> Securing Kubernetes for Production
 https://on24static.akamaized.net/event/43/53/42/8/rt/1/documents/resourceList1700504792291/kubernetessecurity11700504792291.pdf
 https://github.com/AdminTurnedDevOps/PearsonCourses/tree/main
@@ -89,7 +90,7 @@ https://owasp.org/www-project-kubernetes-top-ten/
 https://www.cisecurity.org/cis-benchmarks
 https://www.cisecurity.org/benchmark/kubernetes
 
-::CHATGPT::
+:: CHATGPT (Gerenative Pre-Trained Transformation) ::
 -> Prompt-Engineering-for-Everyone-with-ChatGPT-and-GPT4
 https://github.com/roshanahtina/Prompt-Engineering-for-Everyone-with-ChatGPT-and-GPT4
 
