@@ -93,6 +93,7 @@ https://www.cisecurity.org/benchmark/kubernetes
 :: CHATGPT (Gerenative Pre-Trained Transformation) ::
 -> Prompt-Engineering-for-Everyone-with-ChatGPT-and-GPT4
 https://github.com/roshanahtina/Prompt-Engineering-for-Everyone-with-ChatGPT-and-GPT4
+https://learning.oreilly.com/videos/prompt-engineering-for/9781805122005/9781805122005-video2_1/
 
 
 -> RPMDB busted
