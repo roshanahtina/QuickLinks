@@ -75,12 +75,24 @@ https://pastebin.com/jxEUv9Kc - CKA day1 oct 23
 https://pastebin.com/TJtQjGDk - RHCSA nov23 day2
 https://pastebin.com/mDGGV9H2 - scripting nov23
 
+::VMware::
 -> VMware Hands-on Labs
 https://discovery.vmware.com/page/ds-hands-on-labs?menu=overview
 
+::Kubernetes::
 -> Securing Kubernetes for Production
 https://on24static.akamaized.net/event/43/53/42/8/rt/1/documents/resourceList1700504792291/kubernetessecurity11700504792291.pdf
 https://github.com/AdminTurnedDevOps/PearsonCourses/tree/main
+https://us.norton.com/blog/emerging-threats/cybersecurity-statistics#:~:text=However%2C%20considering%20there%20are%20around,people%20being%20hacked%20per%20year
+https://www.redhat.com/en/resources/state-kubernetes-security-report-2023
+https://owasp.org/www-project-kubernetes-top-ten/
+https://www.cisecurity.org/cis-benchmarks
+https://www.cisecurity.org/benchmark/kubernetes
+
+::CHATGPT::
+-> Prompt-Engineering-for-Everyone-with-ChatGPT-and-GPT4
+https://github.com/roshanahtina/Prompt-Engineering-for-Everyone-with-ChatGPT-and-GPT4
+
 
 -> RPMDB busted
 sudo mkdir /var/lib/rpm/backup
