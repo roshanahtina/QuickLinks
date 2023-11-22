@@ -105,6 +105,8 @@ https://github.com/AdminTurnedDevOps/PearsonCourses/blob/main/Kubernetes-Securit
 -> Prompt-Engineering-for-Everyone-with-ChatGPT-and-GPT4
 https://github.com/roshanahtina/Prompt-Engineering-for-Everyone-with-ChatGPT-and-GPT4
 https://learning.oreilly.com/videos/prompt-engineering-for/9781805122005/9781805122005-video2_1/
+-> https://github.com/roshanahtina/quick-start-guide-to-llms
+-> https://github.com/PacktPublishing/Python-A-Z-Learn-Python-By-Building-15-Projects-and-ChatGPT
 
 
 -> RPMDB busted
