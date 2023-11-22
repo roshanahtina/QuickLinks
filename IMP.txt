@@ -80,6 +80,8 @@ https://pastebin.com/mDGGV9H2 - scripting nov23
 -> VMware Hands-on Labs
 https://discovery.vmware.com/page/ds-hands-on-labs?menu=overview
 
+
+
 :: Kubernetes ::
 -> Securing Kubernetes for Production
 https://on24static.akamaized.net/event/43/53/42/8/rt/1/documents/resourceList1700504792291/kubernetessecurity11700504792291.pdf
@@ -89,6 +91,15 @@ https://www.redhat.com/en/resources/state-kubernetes-security-report-2023
 https://owasp.org/www-project-kubernetes-top-ten/
 https://www.cisecurity.org/cis-benchmarks
 https://www.cisecurity.org/benchmark/kubernetes
+https://github.com/AdminTurnedDevOps/PearsonCourses/blob/main/Kubernetes-Security/Section3/lab/install-istio.md
+https://docs.tigera.io/calico/latest/network-policy/encrypt-cluster-pod-traffic
+https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/ https://learn.microsoft.com/en-us/azure/architecture/operator-guides/aks/aks-upgrade-practices https://platform9.com/blog/kubernetes-upgrade-the-definitive-guide-to-do-it-yourself/ https://learn.microsoft.com/en-us/azure/aks/upgrade-cluster?tabs=azure-cli
+https://www.cvedetails.com/vulnerability-list/vendor_id-15867/product_id-34016/Kubernetes-Kubernetes.html
+https://github.com/AdminTurnedDevOps/PearsonCourses/blob/main/Kubernetes-Security/Section4/lab/labinstructions.md
+https://github.com/AdminTurnedDevOps/PearsonCourses/tree/main/Kubernetes-Security/Section5/lab
+https://github.com/AdminTurnedDevOps/PearsonCourses/blob/main/Kubernetes-Security/Section6/lab/labinstructions.md
+
+
 
 :: CHATGPT (Gerenative Pre-Trained Transformation) ::
 -> Prompt-Engineering-for-Everyone-with-ChatGPT-and-GPT4
