@@ -78,6 +78,10 @@ https://pastebin.com/mDGGV9H2 - scripting nov23
 -> VMware Hands-on Labs
 https://discovery.vmware.com/page/ds-hands-on-labs?menu=overview
 
+-> Securing Kubernetes for Production
+https://on24static.akamaized.net/event/43/53/42/8/rt/1/documents/resourceList1700504792291/kubernetessecurity11700504792291.pdf
+https://github.com/AdminTurnedDevOps/PearsonCourses/tree/main
+
 -> RPMDB busted
 sudo mkdir /var/lib/rpm/backup
 sudo cp -a /var/lib/rpm/__db* /var/lib/rpm/backup/
