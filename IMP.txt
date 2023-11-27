@@ -82,7 +82,20 @@ https://tutorialsdojo.com/
 https://on24static.akamaized.net/event/43/59/42/4/rt/1/documents/resourceList1700506606961/awssecurityspecialtycertscsc02latestlive1700506606961.pdf
 
 -> https://learning.oreilly.com/videos/amazon-web-services/9780137928521/9780137928521-AWS3_03_06_01/
--> 
+
+-> Recommended preparation (AWS Certified Solutions Architect - Associate SAA-C03 Bootcamp):
+(https://learning.oreilly.com/live-events/aws-certified-solutions-architect-associate-saa-c03-bootcamp/0636920055432/0636920099238/)
+
+Week 1: Read the technical brief on AWS global infrastructure (website)
+Week 2: Read the technical brief on AWS management services (website)
+Week 3: Read the technical brief on AWS networking (website)
+Week 4: Read the technical brief on AWS virtual servers (website)
+Week 5: Read the technical brief on AWS storage (website)
+Week 6: Read the technical brief on AWS Auto Scaling (website)
+Recommended follow-up:
+
+Read AWS Certified Solutions Architect Associate All-in-One Exam Guide, Second Edition (Exam SAA-C02)) (book)
+Read Learning Amazon Web Services (AWS): A Hands-On Guide to the Fundamentals of the AWS Cloud (book)
 
 -> RegEx:
 https://learning.oreilly.com/library/view/mastering-regular-expressions/0596528124/
