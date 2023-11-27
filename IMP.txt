@@ -75,8 +75,7 @@ https://github.com/arpcefxl/aws-saa-certification
 -> AWS Certified Solutions Architect - Professional (SAP-C02):
 https://learning.oreilly.com/course/aws-certified-solutions/9780138319205/ 
 https://aws.amazon.com/well-architected-tool/
--> AWS Cheat Sheets:
-https://tutorialsdojo.com/
+-><- AWS Cheat Sheets: https://tutorialsdojo.com/
 
 -> aws-security-specialty-certification:
 https://on24static.akamaized.net/event/43/59/42/4/rt/1/documents/resourceList1700506606961/awssecurityspecialtycertscsc02latestlive1700506606961.pdf
