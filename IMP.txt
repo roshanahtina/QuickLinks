@@ -67,6 +67,9 @@ https://aws.amazon.com/well-architected-tool/
 -> AWS Cheat Sheets:
 https://tutorialsdojo.com/
 
+-> aws-security-specialty-certification:
+https://on24static.akamaized.net/event/43/59/42/4/rt/1/documents/resourceList1700506606961/awssecurityspecialtycertscsc02latestlive1700506606961.pdf
+
 -> RegEx:
 https://learning.oreilly.com/library/view/mastering-regular-expressions/0596528124/
 https://learning.oreilly.com/library/view/sed-awk/1565922255/
