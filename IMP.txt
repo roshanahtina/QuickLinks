@@ -54,6 +54,13 @@ https://on24static.akamaized.net/event/43/33/85/8/rt/1/documents/resourceList169
 -> Mastering-Bash-Shell-Scripting-Automate-your-daily-tasks
 https://github.com/roshanahtina/Mastering-Bash-Shell-Scripting-Automate-your-daily-tasks/blob/main/Section%202/Assignment-01-Solution-Script/assignment01-report-solution.sh
 
+-> https://learning.oreilly.com/videos/bash-shell-scripting/9780137689064/9780137689064-BSS2_01_03_01/
+-> https://learning.oreilly.com/videos/complete-bash-shell/9781800209695/9781800209695-video18_1/
+-> https://learning.oreilly.com/videos/bash-scripting-fundamentals/9780134541730/9780134541730-BSHF_00_00/
+-> https://learning.oreilly.com/videos/learn-bash-shell/9781835080948/9781835080948-video1_1/
+-> https://learning.oreilly.com/videos/mastering-linux-command/9781800204027/9781800204027-video14_1/
+
+
 -> Master title style
 https://on24static.akamaized.net/event/43/47/05/7/rt/1/documents/resourceList1699971479321/containerssep231699971479321.pdf
 
@@ -69,6 +76,9 @@ https://tutorialsdojo.com/
 
 -> aws-security-specialty-certification:
 https://on24static.akamaized.net/event/43/59/42/4/rt/1/documents/resourceList1700506606961/awssecurityspecialtycertscsc02latestlive1700506606961.pdf
+
+-> https://learning.oreilly.com/videos/amazon-web-services/9780137928521/9780137928521-AWS3_03_06_01/
+-> 
 
 -> RegEx:
 https://learning.oreilly.com/library/view/mastering-regular-expressions/0596528124/
