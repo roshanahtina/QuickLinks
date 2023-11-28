@@ -128,6 +128,11 @@ https://github.com/AdminTurnedDevOps/PearsonCourses/blob/main/Kubernetes-Securit
 https://github.com/AdminTurnedDevOps/PearsonCourses/tree/main/Kubernetes-Security/Section5/lab
 https://github.com/AdminTurnedDevOps/PearsonCourses/blob/main/Kubernetes-Security/Section6/lab/labinstructions.md
 
+:: GIT ::
+-> https://on24static.akamaized.net/event/43/59/37/3/rt/1/documents/resourceList1701126828143/git41labs1701126828143.pdf - Git in Four Weeks - Week 1
+-> https://on24static.akamaized.net/event/43/59/37/3/rt/1/documents/resourceList1701126839079/git42labs1701126839079.pdf - Git in Four Weeks - Week 2
+-> https://on24static.akamaized.net/event/43/59/37/3/rt/1/documents/resourceList1701043170963/gitin4weekspart11701043170963.pdf
+-> 
 
 
 :: CHATGPT (Gerenative Pre-Trained Transformation) ::
