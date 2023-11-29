@@ -383,3 +383,289 @@ list_domains
 How to cleanly, yet forcibly shutdown VMs from command line
 https://support.citrix.com/article/CTX220777
 
+# kill -9 $(pidof java) || sync; echo 3 > /proc/sys/vm/drop_caches    ## sync - flush file system buffers
+Examples:: https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstat.html
+sudo ps aux | grep fisheye
+sudo jmap -heap 22390
+sudo ps aux | grep fisheye
+sudo ps aux | grep java
+sudo su -
+pgrep -f java | wc -l
+sudo -iu fisheye /usr/local/fisheye/latest/bin/stop.sh
+pgrep -f java | wc -l
+sudo -iu fisheye /usr/local/fisheye/latest/bin/start.sh
+pgrep -f java | wc -l
+top -b -n1 | head -15
+sudo tailf /usr/local/fisheye/fisheye/var/log/fisheye.out
+top -b -n1 | head -15
+pgrep -f java | wc -l
+sudo ps aux | grep java
+sudo ps aux | grep fisheye
+sudo jmap -heap 24374
+sudo su -
+sudo jmap -heap 24374
+pgrep -f java | wc -l
+pgrep -f java | xargs -r ps -wwo pid,user,start,command
+sync; echo 3 > /proc/sys/vm/drop_caches    ## sync - flush file system buffers
+
+top -n 1 -H -p 1201
+top - 04:31:17 up 15 min,  3 users,  load average: 0.28, 0.35, 0.31
+Threads:  68 total,   0 running,  68 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.2 us,  3.2 sy,  0.0 ni, 93.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem : 16253208 total, 13178624 free,  1906896 used,  1167688 buff/cache
+KiB Swap:  3817468 total,  3817468 free,        0 used. 14052592 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND
+ 2611 root      20   0   13.3g   1.1g  25864 S  6.7  7.3   0:02.75 nioEventLoopGro
+ 1201 root      20   0   13.3g   1.1g  25864 S  0.0  7.3   0:00.02 java
+ 1294 root      20   0   13.3g   1.1g  25864 S  0.0  7.3   0:07.85 java
+
+:: MegaRAID | storcli64  ::
+sudo curl -u<username> -k -O "https://software.example.come/artifactory/server-freebsd/storcli64.tar"
+rpm -ivh --prefix=/opt storcli-1.23.02-1.noarch.rpm
+
+[root@localhost ~]# storcli64 /c0/e8/s8 show all | grep SN
+
+[root@localhost ~]# history
+     ipmitool user set name 2 ADMIN
+     ipmitool user set password 2 <Admin Passwd>
+     ipmitool lan print
+     
+     /opt/MegaRAID/storcli/storcli64 /c0 show all
+     /opt/MegaRAID/storcli/storcli64 /c0/v0 delete
+     /opt/MegaRAID/storcli/storcli64 /c0 show all
+     /opt/MegaRAID/storcli/storcli64 /c0/e65/sall set good force
+     /opt/MegaRAID/storcli/storcli64 /c0 show all
+     /opt/MegaRAID/storcli/storcli64 /c0 add vd type=r1 drives=65:0,65:1
+     /opt/MegaRAID/storcli/storcli64 /c0/e65/s2 add hotsparedrive dgs=0
+     /opt/MegaRAID/storcli/storcli64 /c0 show all
+     /opt/MegaRAID/storcli/storcli64 /c0 add vd type=r1 drives=65:3,65:4.65:5,65:6
+     /opt/MegaRAID/storcli/storcli64 /c0 show all
+     /opt/MegaRAID/storcli/storcli64 /c0 add vd type=r1 drives=65:3,65:4,65:5,65:6
+     /opt/MegaRAID/storcli/storcli64 /c0/e65/s7 add hotsparedrive dgs=1
+     /opt/MegaRAID/storcli/storcli64 /c0 show all
+
+[root@localhost ~]# sudo /opt/MegaRAID/storcli/storcli64 /c0/e8/s3 show all |grep 'SN'
+[root@localhost ~]# sudo /opt/MegaRAID/storcli/storcli64 /c0/e8/sall show all |grep 'SN'
+[root@localhost ~]# sudo /opt/MegaRAID/storcli/storcli64 /c0 show | grep -A50  -E "VD LIST|PD LIST"
+[root@localhost ~]# sudo /opt/MegaRAID/storcli/storcli64 /c0/e8/s2 delete hotsparedrive
+[root@localhost ~]# sudo /opt/MegaRAID/storcli/storcli64 /c0/e8/s2 add hotsparedrive dgs=0
+/opt/MegaRAID/storcli/storcli64 /c0 /eall /sall show all | grep -iE "det|cou|tem|SN|S.M|fir" 
+
+/opt/MegaRAID/storcli/storcli64 /c0 /eall /sall show all | grep -P '(Det|Cou|S\.M|^SN)(?!.*\s(No|0)$)'
+
+"foreign state”:: https://www.thomas-krenn.com/en/wiki/StorCLI_commands -  For Instrution…
+
+[root@localhost ~]# date; sudo /opt/MegaRAID/storcli/storcli64 /c0/fall show
+[root@localhost ~]# sudo /opt/MegaRAID/storcli/storcli64 /c0 /fall import
+
+:: LOAD SNMP (crowdstrike) | SUnreclaim  | slabinfo ::
+Good Condition:
+
+[root@localhost ~]# lsmod | grep falcon
+falcon_lsm_serviceable   980525  1
+falcon_nf_netcontain    16495  1
+falcon_kal             41139  1 falcon_lsm_serviceable
+falcon_lsm_pinned_12504    63974  1
+falcon_lsm_pinned_12104    58273  1
+falcon_lsm_pinned_11711    58216  1
+falcon_lsm_pinned_11710    58216  1
+
+Bad Condition:
+
+This is the Crowdstrike issue. Box needs to be rebooted
+ 
+[root@localhost ~]# lsmod | grep falcon
+falcon_lsm_serviceable  1091145  1
+falcon_nf_netcontain    16495  1
+falcon_kal             45235  1 falcon_lsm_serviceable
+falcon_lsm_pinned_13109    89156  1
+falcon_lsm_pinned_12504    63974  1
+falcon_lsm_pinned_12104    58273  1
+falcon_lsm_pinned_11711    58216  1
+falcon_lsm_pinned_11710    58216  1
+falcon_lsm_pinned_11611    58216  1
+falcon_lsm_pinned_11610    58216  1
+falcon_lsm_pinned_11312    42457  1
+falcon_lsm_pinned_11308    42457  1
+falcon_lsm_pinned_11307    42457  1
+falcon_lsm_pinned_11110    42457  1
+falcon_lsm_pinned_10913    42457  1
+falcon_lsm_pinned_10912    42457  1
+falcon_lsm_pinned_10807    30705  1
+falcon_lsm_pinned_10805    30705  1
+
+sudo ps -e | grep falcon-sensor  [CrowdStrike is running.]
+
+# systemctl status falcon-sensor
+● falcon-sensor.service
+   Loaded: masked (/dev/null; bad)
+   Active: failed (Result: signal) since Wed 2021-12-15 01:00:07 CST; 4 weeks 1 days ago
+ Main PID: 8086 (code=killed, signal=KILL)
+
+https://access.redhat.com/solutions/5953221
+kmalloc-16 and kmalloc-64 slab leak observed in the system due to an issue with 'falcon_lsm_pinned_XXXXX' module.
+Solution Verified - Updated November 5 2021 at 1:22 PM -
+English
+Issue
+* The system is going into Out of memory situation due to slab usage growth.
+* The issue has been observed after upgrading the system including falcon rpm as well.
+Unreclaimable slab cache(kmalloc-16/kmalloc-64) usage keeps growing in the system. Raw # grep ^S /proc/meminfo  | tail -3
+Slab:           57003944 kB
+SReclaimable:     630612 kB
+SUnreclaim:     56373332 kB
+
+# cat /proc/slabinfo | awk '{printf "  %6i MB %s \n",$6*$15/256,$1}' | sort -nrk1 | head
+   54941 MB kmalloc-16 
+     180 MB xfs_inode 
+     149 MB radix_tree_node 
+     116 MB buffer_head 
+      90 MB proc_inode_cache 
+
+# cat /proc/slabinfo |awk '{printf "%7i MiB : %s\n",$6*$(NF-1)/256,$1}'|sort -nk 1 -r|head -5
+   114092 MiB : kmalloc-64
+    64526 MiB : kmalloc-16
+          138 MiB : acfs_inode_cache
+           95 MiB : acfs_buffer_cache_512
+           87 MiB : xfs_inode
+
+#
+ [root@localhost ~]# yum history
+Loaded plugins: product-id, search-disabled-repos, subscription-manager
+ID     | Login user               | Date and time    | Action(s)      | Altered
+-------------------------------------------------------------------------------
+
+:: Single usermode ::
+#IMP  #IMP 
+https://tekneed.com/boot-to-single-user-mode-in-linux-rhel-centos-78/
+
+STEP1: Second Method -> followed
+
+STEP2: xfs_repaire -L /dev/dm-0 and /dev/dm-1 etc.,
+
+https://www.thegeekdiary.com/how-to-boot-into-rescue-mode-or-emergency-mode-through-systemd-in-centos-rhel-7-and-8/
+
+Devices: dm-0, dm-1 etc.,
+### IMP ### 
+Login to single user mode and then try following…
+Unmount the drive.
+xfs_repair -L /dev/xvda2
+
+#
+SSH is CRITICAL on socserver issues.
+
+
+This host will need to be redeployed as /sysroot/ seems to be corrupted and /boot/ is not present, therefore the host cannot read the initramfs
+
+https://www.thegeekdiary.com/input-output-errors-during-xfs-filesystem-access-in-centos-rhel-7/
+
+#
+- https://www.tecmint.com/boot-into-single-user-mode-in-centos-7/
+- https://help.ubuntu.com/community/Grub2/Troubleshooting
+
+CentOS 7.x
+VSI
+To reset the root password of a CentOS 7.x VSI, simply do the following -
+* Log into the KVM
+* Stop/Power Off the instance
+* Power On the instance
+* Watch it boot, catch the grub menu
+* Press "e" to edit the grub menu entry
+* Scroll down to the line starting with linux16
+* Jump to the end, append rw init=/sysroot/bin/sh
+* Press Ctrl+x to boot
+* On command prompt, type chroot /sysroot
+* Run passwd
+* Type in the new password
+* Confirm the new password
+* type exit, to exit the chroot environment. type reboot
+* Try logging into the server with the password to confirm change
+* If this still does not allow you to log in, see the information in the "Stubborn Servers" section below in this article
+
+Bare Metal
+To reset the root password of a Cent OS 7.x bare metal, simply do the following -
+* Log into the IPMI and load the KVM console
+* Reboot the server
+* Wait for the "Booting CentOS Linux press any key..." prompt and press ESC to force it to the GRUB menu
+* Press E to edit the specified kernel
+* Press down until you get to the line that starts with linux16 /vmlinuz and go to the end of that line
+* Add the following: init=/bin/bash
+* Press CTRL+X to boot the server
+* The server should now be booted into bash mode without a prompt
+* Remount / as read/write with the following: mount -o,remount,rw /
+* passwd
+* Type in the new password
+* Confirm the new password
+* Reset the server from the IPMI to have it boot up normal
+
+
+
+#
+Kernel::
+
+https://netshop-isp.com.cy/blog/how-to-change-the-default-kernel-in-grub-for-rhel-and-centos/
+
+grub2-set-default 1
+cat /boot/grub2/grubenv | grep saved
+
+grub2-mkconfig -o /boot/grub2/grub.cfg
+
+
+[root@localhost ~]# rpm -qa kernel
+kernel-4.18.0-477.15.1.el8_8.x86_64
+kernel-4.18.0-477.21.1.el8_8.x86_64
+kernel-4.18.0-372.9.1.el8.x86_64
+
+[root@localhost ~]# yum list installed kernel
+Updating Subscription Management repositories.
+Installed Packages
+kernel.x86_64                                                                  4.18.0-372.9.1.el8                                                                     @anaconda
+kernel.x86_64                                                                  4.18.0-477.15.1.el8_8                                                                  @rhel-8-for-x86_64-baseos-rpms
+kernel.x86_64                                                                  4.18.0-477.21.1.el8_8                                                                  @rhel-8-for-x86_64-baseos-rpms
+
+[root@localhost ~]# rpm -qa | grep kernel | sort
+kernel-4.18.0-372.9.1.el8.x86_64
+kernel-4.18.0-477.15.1.el8_8.x86_64
+kernel-4.18.0-477.21.1.el8_8.x86_64
+kernelcare-2.80-1.el8.x86_64
+kernel-core-4.18.0-372.9.1.el8.x86_64
+kernel-core-4.18.0-477.15.1.el8_8.x86_64
+kernel-core-4.18.0-477.21.1.el8_8.x86_64
+kernel-devel-4.18.0-372.9.1.el8.x86_64
+kernel-devel-4.18.0-477.15.1.el8_8.x86_64
+kernel-devel-4.18.0-477.21.1.el8_8.x86_64
+kernel-headers-4.18.0-477.21.1.el8_8.x86_64
+kernel-modules-4.18.0-372.9.1.el8.x86_64
+kernel-modules-4.18.0-477.15.1.el8_8.x86_64
+kernel-modules-4.18.0-477.21.1.el8_8.x86_64
+kernel-tools-4.18.0-477.21.1.el8_8.x86_64
+kernel-tools-libs-4.18.0-477.21.1.el8_8.x86_64
+
+[root@localhost ~]# grubby --info=ALL | grep ^kernel
+kernel="/boot/vmlinuz-4.18.0-477.21.1.el8_8.x86_64"
+kernel="/boot/vmlinuz-4.18.0-477.15.1.el8_8.x86_64"
+kernel="/boot/vmlinuz-4.18.0-372.9.1.el8.x86_64"
+kernel="/boot/vmlinuz-0-rescue-c47d5191458b46fab33a147d7c603c64"
+
+[root@localhost ~]# uname -r
+4.18.0-372.9.1.el8.x86_64
+
+
+[root@localhost ~]# grubby --info="/boot/vmlinuz-4.18.0-477.15.1.el8_8.x86_64"
+index=1
+kernel="/boot/vmlinuz-4.18.0-477.15.1.el8_8.x86_64"
+args="ro pcie_aspm=off crashkernel=auto resume=UUID=4f74420a-e176-495c-8c89-575b84f54c7f rhgb quiet audit=1 systemd.unified_cgroup_hierarchy=1 $tuned_params"
+root="UUID=5c52c72e-ee16-467b-a9fe-bb6bb9860938"
+initrd="/boot/initramfs-4.18.0-477.15.1.el8_8.x86_64.img $tuned_initrd"
+title="Red Hat Enterprise Linux (4.18.0-477.15.1.el8_8.x86_64) 8.8 (Ootpa)"
+id="c47d5191458b46fab33a147d7c603c64-4.18.0-477.15.1.el8_8.x86_64"
+[root@localhost ~]# grubby --grub2 --default-title
+Red Hat Enterprise Linux (4.18.0-477.21.1.el8_8.x86_64) 8.8 (Ootpa)
+[root@suchitrautilitydal0901 ~]#
+
+[root@localhost ~]# grubby --grub2 --default-title
+Red Hat Enterprise Linux (4.18.0-477.21.1.el8_8.x86_64) 8.8 (Ootpa)
+
+[root@localhost ~]# grubby --default-index
+0
+==============================
