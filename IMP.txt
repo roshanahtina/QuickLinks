@@ -230,8 +230,10 @@ for i in $(awk 'NR%2==0 {print $1}' REQFILE); do host $i.ser.example.com.; done
 
 
 :: NETWORK-SWITCH ::
+
 Switchport descriptions
     sh int desc
+    # sh int desc | inc servername
 Switchport statistics
     sh int stat
     sh int stat | grep "Et3[78]"
@@ -239,10 +241,58 @@ Switchport statistics
 ir01b.sr08.DCCODE#sh int stat | grep kickservername
 is18.sr01.DCCODE#show interface Et44,Et43 switchport
 
-Narrowing your output
-    For MAC address lookups: 
-    sh mac add | inc xxxx.yyyy.dddd
-        is04.sr01.DCCODE# show mac address-table | include 0cc4.7a66.6130
+Narrowing your output::
+For MAC address lookups: 
+sh mac add | inc xxxx.yyyy.dddd
+is04.sr01.DCCODE# show mac address-table | include 0cc4.7a66.6130
+
+#show interfaces status | grep testdccode0110
+#show interface et14,et13 description
+#show interface et13,et14 switchport
+# 
+Show mac address table, to confirm you that is the correct vlan (last 4 digits of Mac Address):
+show mac address-table | include 3570
+# 
+Connect to kickstart server to get server’s IPMI/Server IP:
+arp -a | grep 35:70 [OR] ip neigh | 
+
+# arp
+-bash: arp: command not found 
+# yum list installed | grep net-tools
+# yum install net-tools -y
+
+switch LOG's:
+———---———---
+lb.l05#show log | grep "Ethernet45/1"
+lb.l05#show log | grep "up"
+lb.l05#
+lb.l05#show log | grep "down"
+lb.l05#show log | grep "Apr 27”
+lb.l05#show log | grep "Apr 26"
+Apr 26 17:24:30 slr01b.lon05 Acl: %ACL-6-IPACCES
+
+#
+Creating a VLAN:
+m06.s01.c01# conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+m06.s01.c01(config)# vlan 40
+m06.s01.c01(config-vlan)# sh vlan id 40
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+40   VLAN0040                         active    Po1, Eth1/1, Eth1/39, Eth1/46
+                                         Eth1/47, Eth1/53, Eth1/54
+
+VLAN Type  Vlan-mode
+---- ----- ----------
+40   enet  CE
+
+Primary  Secondary  Type             Ports
+-------  ---------  ---------------  -------------------------------------------
+
+m06.s01.c01(config-vlan)# exit
+m06.s01.c01(config)# exit
+m06.s01.c01# exit
 
 #
 Change the switchport VLAN from to another
