@@ -1,46 +1,68 @@
 :: ChatGPTT ::
-
 https://platform.openai.com/overview
-
 https://chat.openai.com
-
+●
 Suggest fun activities
-for a team-building day with remote employees●
-for a family of 4 to do indoors on a rainy day●
+for a team-building day with remote employees
+●
+for a family of 4 to do indoors on a rainy day
+●
 Brainstorm names
-for an orange cat we're adopting from the shelter●
-for my fantasy football team●
+for an orange cat we're adopting from the shelter
+●
+for my fantasy football team
+●
 Write a text
-asking a friend to be my plus-one at a wedding●
-that goes with a kitten gif for a friend having a rough day●
+asking a friend to be my plus-one at a wedding
+●
+that goes with a kitten gif for a friend having a rough day
+●
 Draft an email
-to request a quote from local plumbers●
-requesting a deadline extension for my project●
+to request a quote from local plumbers
+●
+requesting a deadline extension for my project
+●
 Write a thank-you note
-to my interviewer●
-to our babysitter for the last-minute help●
+to my interviewer
+●
+to our babysitter for the last-minute help
+●
 Plan a trip
-to experience Seoul like a local●
-to see the northern lights in Norway●
+to experience Seoul like a local
+●
+to see the northern lights in Norway
+●
 Summarize this article
-into three key points●
-as a table of pros and cons●
+into three key points
+●
+as a table of pros and cons
+●
 Improve my post
-for hiring a store associate●
-for selling a used vacuum in good condition●
+for hiring a store associate
+●
+for selling a used vacuum in good condition
+●
 Help me debug
-why the linked list appears empty after I've reversed it●
-a Python script automating daily reports●
+why the linked list appears empty after I've reversed it
+●
+a Python script automating daily reports
+●
 Recommend a dish
-to impress a date who's a picky eater●
-to bring to a potluck●
+to impress a date who's a picky eater
+●
+to bring to a potluck
+●
 Give me ideas
-for what to do with my kids' art●
-for a customer loyalty program in a small bookstore●
+for what to do with my kids' art
+●
+for a customer loyalty program in a small bookstore
+●
 Help me pick
-an outfit that will look good on camera●
-a gift for my dad who loves fishing●
-ChatGPT ●
+an outfit that will look good on camera
+●
+a gift for my dad who loves fishing
+
+● ChatGPT ●
 
 -> IBBBM Prep Course:
 https://ibm-cloud-prep.yourlearning.ibm.com
@@ -373,10 +395,37 @@ INSERT INTO hostgroups (datacenter, hostgroup_name, alias, members) VALUES ("wdc
 mysql> INSERT INTO hostgroups (datacenter, hostgroup_name, alias, members) VALUES ("wdc04","kickservername","kickservername","kickservernamed,kickservernamee,kickservernamef");
 Query OK, 1 row affected (0.01 sec)
 
+* update services set check_command = REPLACE(check_command, 'DISKSNMP!','DISKSNMPGENCOMMUNITY!') where host_name='server0302' and service_description like 'FILESYSTEM%';
+
+* UPDATE services SET datacenter='tor02324'  where host_name like '%tosdsr04%' and datacenter!='tor02324' and host_name not like 'monitoring%';
+
+* mysql> UPDATE services SET datacenter='tor02324'  where host_name like '%tor02324%' and datacenter!='tor04232' and host_name not like 'monitoring%';
+Query OK, 17 rows affected (0.15 sec)
+Rows matched: 17  Changed: 17  Warnings: 0
+
+ 327  cat FILESYSTEM-DATA.txt | grep -v -e 'NULL\|id\|datacenter\|use\|created\|updated\|row\|host_name' | sort -u
+  328  cat FILESYSTEM-SLASH.txt | grep -v -e 'NULL\|id\|datacenter\|use\|created\|updated\|row\|host_name' | sort -u
+  329  cat FILESYSTEM-TMP.txt | grep -v -e 'NULL\|id\|datacenter\|use\|created\|updated\|row\|host_name' | sort -u
+  330  ls -ltrh
+  331  cat FILESYSTEM-USR.txt | grep -v -e 'NULL\|id\|datacenter\|use\|created\|updated\|row\|host_name' | sort -u
+  332  cat FILESYSTEM-VAR.txt | grep -v -e 'NULL\|id\|datacenter\|use\|created\|updated\|row\|host_name' | sort -u
+  333  cat NESSUS.txt | grep -v -e 'NULL\|id\|datacenter\|use\|created\|updated\|row\|host_name' | sort -u
+  334  cd ../shovel
+  335  ll
+  336  mysql -u root nagios -e "select * from services where host_name like 'server%' and service_description like 'PING%' \G " > PING.txt
+  337  mysql -u root nagios -e "select * from services where host_name like 'server%' and service_description like 'DISKSNMP-ROOT%' \G " > DISKSNMP-ROOT.txt
+
+# update hostgroups SET members = REPLACE(REPLACE(members,'kickservernamed',''),',-service','')  where members like '%kickservernamed%' and datacenter = 'terer02';
 
 mysql> update hostgroups set members = 'kickservernamed,kickservernamee,kickservernamef' where id=1606;
 Query OK, 1 row affected (0.00 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
+
+# INSERT INTO table_name (column_a, column_b) VALUES ("value_a", "value_b");
+
+INSERT INTO hostgroups (datacenter, hostgroup_name, alias, members) VALUES ("s01","rhn_servers","RHN_SERVE","");
+
+INSERT INTO hostgroups (datacenter, hostgroup_name, alias, members) VALUES ("s01","rhn_servers_mgmt","RHN_SERVE","");
 
 mysql> select id, datacenter,members, hostgroup_name, hostgroup_members from hostgroups where hostgroup_name = 'kickservername_servers' and datacenter like 'DCCODE04%';
 +------+------------+-------------------------------------------------+-----------------+-------------------+
@@ -385,6 +434,13 @@ mysql> select id, datacenter,members, hostgroup_name, hostgroup_members from hos
 | 1606 | DCCODE04   | kickservernamed,kickservernamee,kickservernamef |    util_servers | NULL              |
 +------+------------+-------------------------------------------------+-----------------+-------------------+
 1 row in set (0.00 sec)
+
+# INSERT INTO hosts (host_name, alias, address, hostgroups, datacenter,check_command, max_check_attempts, check_interval, retry_interval, check_period, contact_groups, notification_interval, first_notification_delay, notification_period, notification_options, notifications_enabled) VALUES ("parere04_cluster_mgmt","parere04_cluster","172.1.1.1","st-parere04", "parere04", "HOST", "2", "5", "1", "24x7", "storsys", "60", "0", "24x7", "d,u,r", "1");
+
+mysql> select * from hosts where host_name like "stxf-par0401_cluster_mgmt%" \G
+*************************** 1. row ***************************
+                          id: 10230622
+                  datacenter: parere04
 
 #
 MariaDB [nagios]> select id, datacenter, hostgroup_name, members, hostgroup_members from hostgroups where hostgroup_name like 'kickservername';
