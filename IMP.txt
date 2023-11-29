@@ -669,3 +669,323 @@ Red Hat Enterprise Linux (4.18.0-477.21.1.el8_8.x86_64) 8.8 (Ootpa)
 [root@localhost ~]# grubby --default-index
 0
 ==============================
+ipmilan tool print
+
+:: GIT CMD ::
+
+Clone the REPO
+-- git checkout master
+-- git checkout -b TICKET-123
+-- git pull 
+-- git add filename.json
+-- git commit -m " my first filename databag addtion to stash"
+-- git push  --- link for PR 
+-- use PR link update on stash for title and description and key reviewer  and submit
+
+:: KeepAlived/Kickstart ::
+---
+- name: Restart gracefully KeepAlived on Kickstarts
+  hosts: kickstarts
+  gather_facts: true
+
+  tasks:
+
+    - name: Get Services Facts.
+      ansible.builtin.service_facts:
+
+    - name: Show Services Status.
+      ansible.builtin.debug:
+        msg:
+          - "keepalived: {{ ansible_facts['services'][item]['state'] }}"
+      when:
+        - ansible_facts['services'][item]['state'] == "running"
+      with_items:
+        - "keepalived.service"
+
+    - name: Restart KeepAlived Service on Node A.
+      ansible.builtin.systemd:
+        name: keepalived.service
+        state: restarted
+      when: inventory_hostname is match('.*a$')
+
+    - name: Restart KeepAlived Service on Node B.
+      ansible.builtin.systemd:
+        name: keepalived.service
+        state: restarted
+      when: inventory_hostname is match('.*b$')
+
+    - name: Check host IP address.
+      debug:
+        msg: "The host IP address matches the pattern startswith(161.26.)."
+      when: item.startswith('161.26.')
+      loop: "{{ ansible_all_ipv4_addresses }}"
+...
+
+:: Multipath ::
+https://doyensys.com/blogs/ora-15040-diskgroup-is-incomplete/
+#
+journalctl -u multipathd.service
+
+systemctl status multipathd.service
+
+systemctl restart multipathd.service
+
+systemctl status multipathd.service
+
+cat /etc/multipath.conf
+
+iscsiadm -m session
+
+# iscsiadm -m discovery -t st -p 10.200.120.20
+# iscsiadm -m node -l
+# cd /dev/mapper/
+# ls -ltrh
+total 0
+crw-------. 1 root root 10, 236 May 24 21:38 control
+lrwxrwxrwx. 1 root root       7 May 24 21:38 vg_root-swap -> ../dm-1
+lrwxrwxrwx. 1 root root       7 May 24 21:38 vg_root-root -> ../dm-0
+# iscsiadm -m discovery -t st -p 10.200.120.20
+# iscsiadm -m node -l
+# iscsiadm -m session
+We did those:
+# oracleasm status
+Checking if ASM is loaded: yes
+Checking if /dev/oracleasm is mounted: no
+# oracleasm init
+Mounting ASMlib driver filesystem: /dev/oracleasm
+# oracleasm status
+Checking if ASM is loaded: yes
+Checking if /dev/oracleasm is mounted: yes
+# oracleasm scandisks
+Reloading disk partitions: done
+Cleaning any stale ASM disks...
+Scanning system for ASM disks...
+Instantiating disk "DATA1"
+Instantiating disk "DATA3"
+Instantiating disk "DATA8"
+Instantiating disk "DATA4"
+# oracleasm listdisks
+DATA1
+DATA10
+DATA11
+
+:: LVM | FSCK | XFS_REPAIR ::
+pvdisplay
+lvdisplay
+pwd
+pvs
+lvs
+ls /dev
+cd /dev
+cd vg_pgsql/
+ls -l
+date
+uptime
+df -h
+mount
+lvextend -L +100GB /dev/mapper/vg_pgsql-pg11_archive
+xfs_growfs /var/lib/pgsql/11/archive
+df -h
+vgdisplay
+df -h
+history |grep lvex
+lvextend -L +500GB /dev/mapper/vg_pgsql-pg11_archive
+df -h
+lvdisplay | less
+history | less
+xfs_growfs /var/lib/pgsql/11/archive
+xfs_repair -L /dev/mapper/vg_special-lv_special
+
+# journalctl --dmesg
+
+:: Apache ::
+# apachectl configtest
+Syntax OK
+# httpd -S
+# httpd -t
+Syntax
+
+:: kswapd | KSWAPD | Memory ::
+———————————————————————
+https://www.linode.com/community/questions/18027/high-cpu-from-kswapd0
+
+The process you referred to, kswapd0, manages virtual memory and may be having issues due to moving processes to SWAP too frequently, causing cpu spikes and decreased system performance.
+
+You can view and analyze your settings affecting this behavior with the following:
+
+This is where you determine when processes are moved to swap: $ sudo cat /etc/sysctl.conf
+
+To understand this file better, see this man page for sysctl.conf
+
+These files affect your virtual memory performance: $ sudo cat /proc/sys/vm/swappiness $ sudo cat /proc/sys/vm/vfs_cache_pressure $ sudo cat /sys/kernel/mm/transparent_hugepage/enabled $ sudo cat /proc/sys/vm/drop_caches
+
+To understand these settings before you adjust them, see this documentation for virtual memory.
+
+We've seen this issue mitigated different ways, but taking all three steps in order also seems to keep it from re-occuring:
+Reconfigure /etc/sysctl.conf to require a higher Ram threshold before moving processes to swap. 
+
+This command will set process to SWAP only if you've exhausted RAM: $ sudo echo vm.swappiness=$VALUE | sudo tee -a /etc/sysctl.conf
+
+If swappiness=0, the SWAP disk will be avoided unless absolutely necessary (you run out of RAM completely), 
+and if swappiness=100, programs will be sent to SWAP almost instantly.
+
+Set /proc/sys/vm/drop_caches to 1
+ $ sudo echo 1 > /proc/sys/vm/drop_caches
+
+Reboot for the setting changes to take effect and clear SWAP as you observed previously.
+
+=======
+https://www.kernel.org/doc/Documentation/sysctl/vm.txt
+#
+swappiness ::
+
+This control is used to define how aggressive the kernel will swap
+memory pages.  Higher values will increase aggressiveness, lower values
+decrease the amount of swap.  A value of 0 instructs the kernel not to
+initiate swap until the amount of free and file-backed pages is less
+than the high water mark in a zone.
+
+The default value is 60.
+
+==========
+#
+drop_caches ::
+
+Writing to this will cause the kernel to drop clean caches, as well as
+reclaimable slab objects like dentries and inodes.  Once dropped, their
+memory becomes free.
+
+To free pagecache:
+	echo 1 > /proc/sys/vm/drop_caches
+To free reclaimable slab objects (includes dentries and inodes):
+	echo 2 > /proc/sys/vm/drop_caches
+To free slab objects and pagecache:
+	echo 3 > /proc/sys/vm/drop_caches
+
+This is a non-destructive operation and will not free any dirty objects.
+To increase the number of objects freed by this operation, the user may run
+`sync' prior to writing to /proc/sys/vm/drop_caches.  This will minimize the
+number of dirty objects on the system and create more candidates to be
+dropped.
+
+This file is not a means to control the growth of the various kernel caches
+(inodes, dentries, pagecache, etc...)  These objects are automatically
+reclaimed by the kernel when memory is needed elsewhere on the system.
+
+Use of this file can cause performance problems.  Since it discards cached
+objects, it may cost a significant amount of I/O and CPU to recreate the
+dropped objects, especially if they were under heavy use.  Because of this,
+use outside of a testing or debugging environment is not recommended.
+
+You may see informational messages in your kernel log when this file is
+used:
+
+	cat (1234): drop_caches: 3
+
+These are informational only.  They do not mean that anything is wrong
+with your system.  To disable them, echo 4 (bit 2) into drop_caches.
+
+=======
+
+Checked formatting of swap
+
+I tried:
+
+swapoff /dev/sda2
+
+mkswap /dev/sda2 with no errors and
+
+swapon /dev/sda2
+
+kswapd0 is still running full steam ahead.
+
+
+#
+Times to times I must give "killall -9 kswapd0" to delete it.
+
+i managed to get some logs when kswapd is starting to go rogue:
+see my attachments to this bug: sysctl, dmesg, meminfo
+
+
+==============================================================
+
+:: DISK SPACE ::
+
+$ 2>/dev/null sudo du -sh /var/log/* | sort -hrk1 | head
+$ 2>/dev/null sudo du -sh /data/* | sort -hrk1 | head
+$ 2>/dev/null sudo du -sh /home/* | sort -hrk1 | head
+
+* $ sudo /usr/bin/du -h --max-depth=1 /home/ | egrep "^[0-9]+(\.[0-9]+)?" | sort -h -r > $OUTFILE
+
+* sudo du -xhm /home --max-depth=1 /home/ | sort -r -n | head -n 10
+
+* $ sudo du -h --max-depth=1 /home/ | sort -hr | head -n 20
+         3.3G /home/
+         538M /home/a
+         346M /home/b
+         241M /home/c
+
+ * $ sudo du -sch /var/log/devices/vpn.log-2019* | grep total [OR] |  wc -l
+       71G     total
+
+$ sudo du -h --block-size=1M --threshold=100M --max-depth=1 /home/ | sort -hr | awk '{printf "%5.1fG %s\n", $1/1024, $2}' | sed -n '1!p'
+      0.4G /home/abc
+      0.3G /home/def
+
+# 2>/dev/null sudo du -sh /home/shared/* | sort -hrk1 | head
+449G    /home/shared/Logs
+# 2>/dev/null sudo du -sh /home/shared/Logs/* | sort -hrk1 | head
+29G     /home/Logs/20210303
+
+$ 2>/dev/null sudo du -sh /home/* | sort -hrk1 | head -40
+544G    /home/rabbit
+181G    /home/regret
+131G    /home/jnuke
+
+$ sudo du -h --threshold=100M /home/ | sort -h
+105M	/home/rose/patch_downloads
+181M	/home/tiger/testing
+
+* yum clean all
+
+# How can a log program continue to log to a deleted file?
+https://unix.stackexchange.com/questions/146929/how-can-a-log-program-continue-to-log-to-a-deleted-file
+
+# How to recover deleted file if it is still opened by some process?
+https://superuser.com/questions/283102/how-to-recover-deleted-file-if-it-is-still-opened-by-some-process
+
+# truncate — truncate a file to a specified length
+
+* cat /dev/null > filename
+
+* echo -n > filename
+
+* echo -n > filename
+
+* truncate -s 1G rabbit\@file.log -> After truncate the file to 1GB
+
+    [root@file ]# du -sch rabbit@file.log rabbit@file-sl.log
+    24G     rabbit@file.log
+    17G     rabbit@file-sl.log
+    40G     total
+    [root@file ]# truncate -s 1G rabbit\@file.log
+    [root@file ]# du -sch rabbit@file.log rabbit@file-sl.log
+    1.1G    file.log
+    17G     filesl.log
+    18G     total
+
+The -s 0 option sets the file size to zero.
+For example, to empty the Nginx access log you would use:
+sudo truncate -s 0 /var/log/nginx/access.log
+
+The following command will empty files ending with “.log” under the /var/log directory:
+sudo truncate -s 0 /var/log/**/*.log 
+
+# To Clean Up The Content In A File:
+
+> /path/to/the/file.txt
+
+gzip -9 <file name>
+
+
+
