@@ -1,3 +1,47 @@
+:: ChatGPTT ::
+
+https://platform.openai.com/overview
+
+https://chat.openai.com
+
+Suggest fun activities
+for a team-building day with remote employees●
+for a family of 4 to do indoors on a rainy day●
+Brainstorm names
+for an orange cat we're adopting from the shelter●
+for my fantasy football team●
+Write a text
+asking a friend to be my plus-one at a wedding●
+that goes with a kitten gif for a friend having a rough day●
+Draft an email
+to request a quote from local plumbers●
+requesting a deadline extension for my project●
+Write a thank-you note
+to my interviewer●
+to our babysitter for the last-minute help●
+Plan a trip
+to experience Seoul like a local●
+to see the northern lights in Norway●
+Summarize this article
+into three key points●
+as a table of pros and cons●
+Improve my post
+for hiring a store associate●
+for selling a used vacuum in good condition●
+Help me debug
+why the linked list appears empty after I've reversed it●
+a Python script automating daily reports●
+Recommend a dish
+to impress a date who's a picky eater●
+to bring to a potluck●
+Give me ideas
+for what to do with my kids' art●
+for a customer loyalty program in a small bookstore●
+Help me pick
+an outfit that will look good on camera●
+a gift for my dad who loves fishing●
+ChatGPT ●
+
 -> IBBBM Prep Course:
 https://ibm-cloud-prep.yourlearning.ibm.com
 
@@ -176,3 +220,166 @@ systemd-tmpfiles-clean.timer   static   -
 ● sysstat-collect.timer - Run system activity accounting tool every 10 minutes
      Loaded: loaded (/usr/lib/systemd/system/sysstat-collect.timer; enabled; p>
      Active: active (running) since Tue 2023-11-14 16:29:05 UTC; 1min 13s ago
+
+
+:: FOR LOOP ::
+
+for i in $(awk '{print $1}' REQFILE); do host $i; done
+for i in $(awk 'NR%2==1 {print $1}' REQFILE\[gh\]); do dig NS $i.ser.example.com. +noall +answer; done
+for i in $(awk 'NR%2==0 {print $1}' REQFILE); do host $i.ser.example.com.; done
+
+
+:: NETWORK-SWITCH ::
+Switchport descriptions
+    sh int desc
+Switchport statistics
+    sh int stat
+    sh int stat | grep "Et3[78]"
+    show interfaces Et12[or]43-48 status
+ir01b.sr08.DCCODE#sh int stat | grep kickservername
+is18.sr01.DCCODE#show interface Et44,Et43 switchport
+
+Narrowing your output
+    For MAC address lookups: 
+    sh mac add | inc xxxx.yyyy.dddd
+        is04.sr01.DCCODE# show mac address-table | include 0cc4.7a66.6130
+
+#
+Change the switchport VLAN from to another
+no switchport access vlan <port no>
+switchport access vlan <port no>
+no shutdown
+
+STEP (1)
+#configure terminal
+#int Ethernet25
+#shutdown
+ 
+STEP (2)
+#configure terminal
+#default interface ethernet <port number> --> BUUUUUUUT be very careful
+
+
+grep -riIF 2401:c900:2700:8800::1a /etc/sysconfig/network-scripts/
+But a ps –ef shows different No, splunk is not running…
+$ ps -ef|grep splunk|grep -v grep
+Seems different processes have taken over these pids…
+$ ps -ef|egrep "14371|14372"
+
+
+ip -o -6 r sh dev eth0 | grep '\<metric 1\>'
+default via 2401:c900:2700:8800::1 metric 1 pref medium
+
+Route:
+nmcli con edit eth2
+ping -c 1 -I eth2 kickservername
+
+nmcli con modify eth2 ipv4.gateway '172.1.1.1' OR
+nmcli con modify eth2 ipv4.gateway ''
+ssh  -l rmunavar -b 172.1.1.1 kickservername
+
+##
+SAVE the Changes in Switch::
+
+is03.sr01.dccode#copy running-config startup-config
+Destination filename [startup-config]?  ---->>> Just enter it
+%Error copying nvram:y (Invalid argument)
+is03.sr01.dccode#copy running-config startup-config
+Destination filename [startup-config]?
+Building configuration...
+[OK]
+0 bytes copied in 2.474 secs (0 bytes/sec)
+is03.sr01.ams01#
+
+is04.sr01.dccode# copy running-config startup-config
+[########################################] 100%
+Copy complete, now saving to disk (please wait)...
+is04.sr01.dccode#
+
+
+:: MYSQL DB QUERY::
+# -> A
+select host_name from services where host_name like 'kickservername%';
+select host_name from services where host_name like '%';
+
+
+# -> B
+select host_name,id from hosts where host_name like 'kickservername%';
+delete from hosts where host_name='kickservername.dccode' and id='1662';
+
+select host_name,id from hosts where host_name like '%';
+delete from hosts where host_name='' and id='';
+
+# -> C
+select id, datacenter,members, hostgroup_name, hostgroup_members from hostgroups where members like 'kickservername.dccode%';
+update hostgroups set members = REPLACE(members,'kickservername.dccode','kickservername.') where members like 'kickservername.dccode%' and datacenter = 'ams01' and id=24;
+
+select id, datacenter,members, hostgroup_name, hostgroup_members from hostgroups where members like '%';
+update hostgroups set members = REPLACE(members,'','') where members like '%' and datacenter = '' and id=;
+
+
+INSERT INTO hostgroups (datacenter, hostgroup_name, alias, members) VALUES ("wdc04","imsutil_servers","imsutil_servers","");
+
+mysql> INSERT INTO hostgroups (datacenter, hostgroup_name, alias, members) VALUES ("wdc04","kickservername","kickservername","kickservernamed,kickservernamee,kickservernamef");
+Query OK, 1 row affected (0.01 sec)
+
+
+mysql> update hostgroups set members = 'kickservernamed,kickservernamee,kickservernamef' where id=1606;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select id, datacenter,members, hostgroup_name, hostgroup_members from hostgroups where hostgroup_name = 'kickservername_servers' and datacenter like 'DCCODE04%';
++------+------------+-------------------------------------------------+-----------------+-------------------+
+| id   | datacenter | members                                         | hostgroup_name  | hostgroup_members |
++------+------------+-------------------------------------------------+-----------------+-------------------+
+| 1606 | DCCODE04   | kickservernamed,kickservernamee,kickservernamef |    util_servers | NULL              |
++------+------------+-------------------------------------------------+-----------------+-------------------+
+1 row in set (0.00 sec)
+
+#
+MariaDB [nagios]> select id, datacenter, hostgroup_name, members, hostgroup_members from hostgroups where hostgroup_name like 'kickservername';
+Empty set (0.00 sec)
+
+MariaDB [nagios]>
+
+:: KNIFE COMMADS ::
+cat /etc/chef/base.json
+cat /etc/chef/client.rb
+cat ~/.chef/knife.rb
+knife status 'hostname:server05*' -r
+knife cookbook list | grep apt
+knife cookbook list | grep yum
+vim ../.chef/knife.rb
+knife download /cookbooks/apt --dry-run
+knife cookbook list | grep yum
+knife ssl check
+knife search server05.example.com
+knife search -a server.nagios.nagios_config.service_check_timeout 'hostname:server05.example.com*'
+knife search 'hostname:server05' | grep -E 'FQDN|Platform|IP|Role|Tags'
+knife status 'hostname:*shell* AND role:*_base' -r | grep -v par
+knife node show server05.example.com
+knife node show frontend01 --format json -a ipaddress
+knife node show frontend01 --format json
+Knife SET ROLE command:
+knife node run_list set server05.ex.local 'role[role_base]'
+knife status -r 'hostname:server05*'
+chef-client -o 'recipe[ohai],recipe[autodiscovery]' || systemctl reload nginx
+for node in server05{a..d}.exa.local ; do knife node run_list set ${node} role[server05_sudo] ;done
+while read n; do ping $n -c 1; done < server05.txt 
+for i in $(awk 'NR%2==1 {print $1}' REQTICK); do echo "Chef-Runn status: " `ks -r fqdn:$i`;done
+for i in server050101{a..b};do echo "Tag for hostname: $i `knife tag list $i.ex.local`";done
+for i in $(awk 'NR%2==0 {print $1}' REQ); do echo "Uptime for hostname: $i `knife ssh name:$i "uptime"`";done
+for i in $(awk 'NR%2==0 {print $1}' FAB); do echo "Uptime for A-node hostname: $i";done
+
+:: XEN Server ::
+systemctl status message-switch
+xe-toolstack-restart
+xe sr-list
+xe vm-disk-list uuid=ccc57d57-ec7c-4d8e-0404
+xe vm-list params=dom-id,resident-on name-label=servername
+xe vm-list name-label=servername
+xe vm-shutdown uuid=c09c889c-548a-45a6-afe3- force=true
+list_domains
+How to cleanly, yet forcibly shutdown VMs from command line
+https://support.citrix.com/article/CTX220777
+
