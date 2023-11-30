@@ -831,6 +831,64 @@ Clone the REPO
       loop: "{{ ansible_all_ipv4_addresses }}"
 ...
 
+---
+- name: Monitor VIP and Check Status of KeepaliveD
+  hosts: kickstarts
+  become: yes
+  gather_facts: True
+​
+  vars:
+    vip_interface: eth0
+#    vip_address: 100.66.1.20
+​
+  tasks:
+​
+    - name: Verify VIP IP Address.
+      ansible.builtin.command: dig @100.64.18.20 {{ app_id }}.sllab.local +noall +short
+      register: vip_address
+​
+    - name: Show Output.
+      ansible.builtin.debug:
+        var: vip_address['stdout']
+​
+    - name: Check if VIP is primary or secondary address
+      ansible.builtin.set_fact:
+        vip_assigned: "{{ vip_address['stdout'] == ansible_eth0['ipv4']['address'] or
+                          vip_address['stdout'] in (ansible_eth0['ipv4_secondaries'] | map(attribute='address') | list) }}"
+​
+    - name: Check if VIP is primary or secondary address
+      ansible.builtin.set_fact:
+        vip_assigned: "{{ vip_address['stdout'] == ansible_eth0['ipv4']['address'] or
+                          (ansible_eth0['ipv4_secondaries'] is defined and vip_address['stdout'] in ansible_eth0['ipv4_secondaries'] | map(attribute='address') | list) }}"
+      when: ansible_eth0['ipv4'] is defined
+​
+    - name: Assert VIP Status
+      ansible.builtin.assert:
+        that:
+          - vip_assigned
+        fail_msg: "VIP {{ vip_address['stdout'] }} is NOT assigned to the interface {{ vip_interface }}"
+        success_msg: "VIP {{ vip_address['stdout'] }} IT IS assigned to the interface {{ vip_interface }}"
+      ignore_errors: yes
+​
+    - name: Restart (or Status) KeepaliveD On The Current Master Node.
+      ansible.builtin.systemd:
+        name: keepalived.service
+        state: started
+      when: vip_assigned | default(false)
+      register: keepalived_status
+      tags: never
+​
+    - name: Gather KeepaliveD service facts
+      ansible.builtin.service_facts:
+​
+    - name: Assert KeepaliveD Status
+      ansible.builtin.assert:
+        that:
+          - ansible_facts['services']['keepalived.service']['state'] == 'running'
+        fail_msg: "KeepaliveD service is NOT running!"
+        success_msg: "KeepaliveD service is running!"
+...
+
 :: Multipath ::
 https://doyensys.com/blogs/ora-15040-diskgroup-is-incomplete/
 #
