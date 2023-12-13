@@ -199,6 +199,7 @@ https://github.com/AdminTurnedDevOps/PearsonCourses/tree/main/Kubernetes-Securit
 https://github.com/AdminTurnedDevOps/PearsonCourses/blob/main/Kubernetes-Security/Section6/lab/labinstructions.md
 
 :: CKAD ::
+https://github.com/roshanahtina/curriculum.git --  Curriculum
 
 
 :: GIT ::
