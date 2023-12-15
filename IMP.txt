@@ -1,69 +1,3 @@
-:: ChatGPTT ::
-https://platform.openai.com/overview
-https://chat.openai.com
-●
-Suggest fun activities
-for a team-building day with remote employees
-●
-for a family of 4 to do indoors on a rainy day
-●
-Brainstorm names
-for an orange cat we're adopting from the shelter
-●
-for my fantasy football team
-●
-Write a text
-asking a friend to be my plus-one at a wedding
-●
-that goes with a kitten gif for a friend having a rough day
-●
-Draft an email
-to request a quote from local plumbers
-●
-requesting a deadline extension for my project
-●
-Write a thank-you note
-to my interviewer
-●
-to our babysitter for the last-minute help
-●
-Plan a trip
-to experience Seoul like a local
-●
-to see the northern lights in Norway
-●
-Summarize this article
-into three key points
-●
-as a table of pros and cons
-●
-Improve my post
-for hiring a store associate
-●
-for selling a used vacuum in good condition
-●
-Help me debug
-why the linked list appears empty after I've reversed it
-●
-a Python script automating daily reports
-●
-Recommend a dish
-to impress a date who's a picky eater
-●
-to bring to a potluck
-●
-Give me ideas
-for what to do with my kids' art
-●
-for a customer loyalty program in a small bookstore
-●
-Help me pick
-an outfit that will look good on camera
-●
-a gift for my dad who loves fishing
-
-● ChatGPT ●
-
 -> IBBBM Prep Course:
 https://ibm-cloud-prep.yourlearning.ibm.com
 
@@ -200,6 +134,12 @@ https://github.com/AdminTurnedDevOps/PearsonCourses/blob/main/Kubernetes-Securit
 
 :: CKAD ::
 https://github.com/roshanahtina/curriculum.git --  Curriculum
+
+Microservices:: RESOURCE.TXT
+https://github.com/roshanahtina/microservices/blob/master/RESOURCE.TXT - KCNA, CKA, CKAD
+# related labs
+CKAD labs: https://learning.oreilly.com/playlists/ea6ea0fc-d8e2-422c-94dd-a0a8f608d224/
+CKA lab: https://learning.oreilly.com/playlists/d6e3fe86-067c-4dc7-a36d-698802d0bdee/
 
 
 :: GIT ::
@@ -595,19 +535,7 @@ falcon_nf_netcontain    16495  1
 falcon_kal             45235  1 falcon_lsm_serviceable
 falcon_lsm_pinned_13109    89156  1
 falcon_lsm_pinned_12504    63974  1
-falcon_lsm_pinned_12104    58273  1
-falcon_lsm_pinned_11711    58216  1
-falcon_lsm_pinned_11710    58216  1
-falcon_lsm_pinned_11611    58216  1
-falcon_lsm_pinned_11610    58216  1
-falcon_lsm_pinned_11312    42457  1
-falcon_lsm_pinned_11308    42457  1
-falcon_lsm_pinned_11307    42457  1
-falcon_lsm_pinned_11110    42457  1
-falcon_lsm_pinned_10913    42457  1
-falcon_lsm_pinned_10912    42457  1
-falcon_lsm_pinned_10807    30705  1
-falcon_lsm_pinned_10805    30705  1
+....Snipped....
 
 sudo ps -e | grep falcon-sensor  [CrowdStrike is running.]
 
@@ -1159,5 +1087,69 @@ sudo truncate -s 0 /var/log/**/*.log
 
 gzip -9 <file name>
 
+:: ChatGPTT ::
+https://platform.openai.com/overview
+https://chat.openai.com
+●
+Suggest fun activities
+for a team-building day with remote employees
+●
+for a family of 4 to do indoors on a rainy day
+●
+Brainstorm names
+for an orange cat we're adopting from the shelter
+●
+for my fantasy football team
+●
+Write a text
+asking a friend to be my plus-one at a wedding
+●
+that goes with a kitten gif for a friend having a rough day
+●
+Draft an email
+to request a quote from local plumbers
+●
+requesting a deadline extension for my project
+●
+Write a thank-you note
+to my interviewer
+●
+to our babysitter for the last-minute help
+●
+Plan a trip
+to experience Seoul like a local
+●
+to see the northern lights in Norway
+●
+Summarize this article
+into three key points
+●
+as a table of pros and cons
+●
+Improve my post
+for hiring a store associate
+●
+for selling a used vacuum in good condition
+●
+Help me debug
+why the linked list appears empty after I've reversed it
+●
+a Python script automating daily reports
+●
+Recommend a dish
+to impress a date who's a picky eater
+●
+to bring to a potluck
+●
+Give me ideas
+for what to do with my kids' art
+●
+for a customer loyalty program in a small bookstore
+●
+Help me pick
+an outfit that will look good on camera
+●
+a gift for my dad who loves fishing
 
+● ChatGPT ●
 
