@@ -156,6 +156,10 @@ https://learning.oreilly.com/videos/prompt-engineering-for/9781805122005/9781805
 -> https://github.com/roshanahtina/quick-start-guide-to-llms
 -> https://github.com/PacktPublishing/Python-A-Z-Learn-Python-By-Building-15-Projects-and-ChatGPT
 
+:: CCNA ::
+-> CCNA 200-301 Crash Course ( By Wendell Odom )
+-> https://on24static.akamaized.net/event/44/15/94/5/rt/1/documents/resourceList1704464355906/ccnaccday011704464355906.pdf
+-> 
 
 -> RPMDB busted
 sudo mkdir /var/lib/rpm/backup
