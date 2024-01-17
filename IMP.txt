@@ -142,6 +142,15 @@ CKAD labs: https://learning.oreilly.com/playlists/ea6ea0fc-d8e2-422c-94dd-a0a8f6
 CKA lab: https://learning.oreilly.com/playlists/d6e3fe86-067c-4dc7-a36d-698802d0bdee/
 
 
+:: AZURE ::
+Azure Fundamentals (AZ-900) Bootcamp
+-> https://on24static.akamaized.net/event/44/14/69/1/rt/1/documents/resourceList1704474576108/oreillyaz900slidedeckjan20241704474576108.pdf
+-> https://github.com/zaalion/oreilly-az-900
+-> 
+Hands-On Azure for Beginners
+-> 
+-> 
+
 :: GIT ::
 -> https://on24static.akamaized.net/event/43/59/37/3/rt/1/documents/resourceList1701126828143/git41labs1701126828143.pdf - Git in Four Weeks - Week 1
 -> https://on24static.akamaized.net/event/43/59/37/3/rt/1/documents/resourceList1701126839079/git42labs1701126839079.pdf - Git in Four Weeks - Week 2
