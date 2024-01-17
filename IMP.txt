@@ -148,7 +148,7 @@ Azure Fundamentals (AZ-900) Bootcamp
 -> https://github.com/zaalion/oreilly-az-900
 -> 
 Hands-On Azure for Beginners
--> 
+-> https://on24static.akamaized.net/event/42/35/26/0/rt/1/documents/resourceList1705446307004/week11705446307004.pdf
 -> 
 
 :: GIT ::
@@ -167,7 +167,10 @@ https://learning.oreilly.com/videos/prompt-engineering-for/9781805122005/9781805
 
 :: CCNA ::
 -> CCNA 200-301 Crash Course ( By Wendell Odom )
+-> https://blog.certskills.com/ccc-study/ ->> "CCNA Crash Course – Study and Review"
+-> https://blog.certskills.com/ccc-reference/  ->> "CCNA Crash Course – Reference"
 -> https://on24static.akamaized.net/event/44/15/94/5/rt/1/documents/resourceList1704464355906/ccnaccday011704464355906.pdf
+-> https://on24static.akamaized.net/event/44/15/94/7/rt/1/documents/resourceList1704467426451/ccnaccday021704467426451.pdf
 -> 
 
 -> RPMDB busted
