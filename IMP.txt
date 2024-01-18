@@ -145,6 +145,7 @@ CKA lab: https://learning.oreilly.com/playlists/d6e3fe86-067c-4dc7-a36d-698802d0
 :: AZURE ::
 Azure Fundamentals (AZ-900) Bootcamp
 -> https://on24static.akamaized.net/event/44/14/69/1/rt/1/documents/resourceList1704474576108/oreillyaz900slidedeckjan20241704474576108.pdf
+-> https://on24static.akamaized.net/event/44/14/69/3/rt/1/documents/resourceList1704474643024/oreillyaz900slidedeckjan20241704474643024.pdf
 -> https://github.com/zaalion/oreilly-az-900
 -> 
 Hands-On Azure for Beginners
@@ -401,7 +402,7 @@ mysql> select id, datacenter,members, hostgroup_name, hostgroup_members from hos
 
 # INSERT INTO hosts (host_name, alias, address, hostgroups, datacenter,check_command, max_check_attempts, check_interval, retry_interval, check_period, contact_groups, notification_interval, first_notification_delay, notification_period, notification_options, notifications_enabled) VALUES ("parere04_cluster_mgmt","parere04_cluster","172.1.1.1","st-parere04", "parere04", "HOST", "2", "5", "1", "24x7", "storsys", "60", "0", "24x7", "d,u,r", "1");
 
-mysql> select * from hosts where host_name like "stxf-par0401_cluster_mgmt%" \G
+mysql> select * from hosts where host_name like "st-dc0401_cluster_mgmt99%" \G
 *************************** 1. row ***************************
                           id: 10230622
                   datacenter: parere04
