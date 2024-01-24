@@ -173,7 +173,8 @@ https://learning.oreilly.com/videos/prompt-engineering-for/9781805122005/9781805
 -> https://blog.certskills.com/ccc-reference/  ->> "CCNA Crash Course – Reference"
 -> https://on24static.akamaized.net/event/44/15/94/5/rt/1/documents/resourceList1704464355906/ccnaccday011704464355906.pdf
 -> https://on24static.akamaized.net/event/44/15/94/7/rt/1/documents/resourceList1704467426451/ccnaccday021704467426451.pdf
--> 
+-> https://on24static.akamaized.net/event/44/15/94/9/rt/1/documents/resourceList1704467339047/ccnaccday031704467339047.pdf
+-> https://on24static.akamaized.net/event/44/15/95/1/rt/1/documents/resourceList1704467392287/ccnaccday041704467392287.pdf
 
 -> RPMDB busted
 sudo mkdir /var/lib/rpm/backup
