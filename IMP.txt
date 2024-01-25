@@ -176,6 +176,12 @@ https://learning.oreilly.com/videos/prompt-engineering-for/9781805122005/9781805
 -> https://on24static.akamaized.net/event/44/15/94/9/rt/1/documents/resourceList1704467339047/ccnaccday031704467339047.pdf
 -> https://on24static.akamaized.net/event/44/15/95/1/rt/1/documents/resourceList1704467392287/ccnaccday041704467392287.pdf
 
+:: Terraform ::
+-> Terraform: Getting Started
+-> https://on24static.akamaized.net/event/44/19/07/5/rt/1/documents/resourceList1705405699942/classterraformgetstarted1705405699942.pdf
+-> https://gist.github.com/roshanahtina/f042ed1200d795e432df05723b9264b5
+
+
 -> RPMDB busted
 sudo mkdir /var/lib/rpm/backup
 sudo cp -a /var/lib/rpm/__db* /var/lib/rpm/backup/
