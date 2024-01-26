@@ -177,10 +177,13 @@ https://learning.oreilly.com/videos/prompt-engineering-for/9781805122005/9781805
 -> https://on24static.akamaized.net/event/44/15/95/1/rt/1/documents/resourceList1704467392287/ccnaccday041704467392287.pdf
 
 :: Terraform ::
--> Terraform: Getting Started
+->> Terraform: Getting Started
 -> https://on24static.akamaized.net/event/44/19/07/5/rt/1/documents/resourceList1705405699942/classterraformgetstarted1705405699942.pdf
 -> https://gist.github.com/roshanahtina/f042ed1200d795e432df05723b9264b5
 
+->> Next Level Terraform
+-> https://on24static.akamaized.net/event/44/24/92/5/rt/1/documents/resourceList1705524646578/nextlevelterraform11705524646578.pdf
+-> https://github.com/roshanahtina/terraform-live-template; https://github.com/roshanahtina/terraform-modules-template; https://github.com/roshanahtina/Next-Level-Terraform
 
 -> RPMDB busted
 sudo mkdir /var/lib/rpm/backup
