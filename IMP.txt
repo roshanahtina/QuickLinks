@@ -42,6 +42,12 @@ https://on24static.akamaized.net/event/43/33/82/1/rt/1/documents/resourceList169
 https://on24static.akamaized.net/event/43/33/82/2/rt/1/documents/resourceList1697482662436/linuxfundamentals516231690989321545.pdf
 https://on24static.akamaized.net/event/44/22/49/5/rt/1/documents/resourceList1705675763785/linuxfundamentals5162311705675763785.pdf
 
+-> LINUX NETWORKING & SECURITY FUNDAMENTALS::
+https://github.com/daveprowse/lnsf
+https://on24static.akamaized.net/event/44/24/99/9/rt/1/documents/resourceList1706212346892/linkslnsfrevc1706212346892.pdf
+https://on24static.akamaized.net/event/44/24/99/9/rt/1/documents/resourceList1706212334425/lnsfslidesday1revm1706212334425.pdf
+
+
 -> RHCSA Crash Course
 https://on24static.akamaized.net/event/43/38/49/7/rt/1/documents/resourceList1698414414376/rhcsa911698414413682.pdf
 
@@ -100,6 +106,9 @@ Read Learning Amazon Web Services (AWS): A Hands-On Guide to the Fundamentals of
 -> AWS Event-Driven Automation and Operations
 https://on24static.akamaized.net/event/43/59/41/5/rt/1/documents/resourceList1701089888800/awseventdrivenautomationandoperationslatest1701089888800.pdf
 https://github.com/arpcefxl/aws-event-driven
+
+-> Hands-on AWS Operations with ChatGPT
+https://on24static.akamaized.net/event/44/24/93/6/rt/1/documents/resourceList1705933749020/handsonawsoperationswithchatgpt1116231705933749020.pdf
 
 -> RegEx:
 https://learning.oreilly.com/library/view/mastering-regular-expressions/0596528124/
