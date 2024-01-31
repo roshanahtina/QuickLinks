@@ -156,14 +156,20 @@ CKA lab: https://learning.oreilly.com/playlists/d6e3fe86-067c-4dc7-a36d-698802d0
 
 
 :: AZURE ::
-Azure Fundamentals (AZ-900) Bootcamp
+Azure Fundamentals (AZ-900) Bootcamp:
 -> https://on24static.akamaized.net/event/44/14/69/1/rt/1/documents/resourceList1704474576108/oreillyaz900slidedeckjan20241704474576108.pdf
 -> https://on24static.akamaized.net/event/44/14/69/3/rt/1/documents/resourceList1704474643024/oreillyaz900slidedeckjan20241704474643024.pdf
 -> https://github.com/zaalion/oreilly-az-900
 -> 
-Hands-On Azure for Beginners
+
+Hands-On Azure for Beginners:
 -> https://on24static.akamaized.net/event/42/35/26/0/rt/1/documents/resourceList1705446307004/week11705446307004.pdf
 -> 
+
+Azure Network Engineer Associate (AZ-700) Bootcamp:
+-> https://on24static.akamaized.net/event/44/25/00/6/rt/1/documents/resourceList1705000059845/az700bootcamprezasalehi1705000059845.pdf
+
+
 
 :: GIT ::
 -> https://on24static.akamaized.net/event/43/59/37/3/rt/1/documents/resourceList1701126828143/git41labs1701126828143.pdf - Git in Four Weeks - Week 1
