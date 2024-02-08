@@ -53,6 +53,7 @@ https://on24static.akamaized.net/event/44/24/99/9/rt/1/documents/resourceList170
 
 -> RHCSA Crash Course
 https://on24static.akamaized.net/event/43/38/49/7/rt/1/documents/resourceList1698414414376/rhcsa911698414413682.pdf
+https://on24static.akamaized.net/event/44/33/36/1/rt/1/documents/resourceList1706496181920/rhcsa911706496181920.pdf
 
 -> *upcoming live courses*
 https://github.com/roshanahtina/rhcsa/blob/master/resources.txt
