@@ -4,6 +4,22 @@ https://ibm-cloud-prep.yourlearning.ibm.com
 -> O'REILLY:
 https://learning.oreilly.com/home-new/
 
+:: ChatGPTT ::
+
+-> Hands-on AWS Operations with ChatGPT
+https://on24static.akamaized.net/event/44/24/93/6/rt/1/documents/resourceList1705933749020/handsonawsoperationswithchatgpt1116231705933749020.pdf
+
+:: CHATGPT (Gerenative Pre-Trained Transformation) ::
+-> Prompt-Engineering-for-Everyone-with-ChatGPT-and-GPT4
+https://github.com/roshanahtina/Prompt-Engineering-for-Everyone-with-ChatGPT-and-GPT4
+https://learning.oreilly.com/videos/prompt-engineering-for/9781805122005/9781805122005-video2_1/
+-> https://github.com/roshanahtina/quick-start-guide-to-llms
+-> https://github.com/PacktPublishing/Python-A-Z-Learn-Python-By-Building-15-Projects-and-ChatGPT
+
+ChatGPT to Improve Your Writing:
+-> https://on24static.akamaized.net/event/44/32/02/3/rt/1/documents/resourceList1706493041740/chatgptwriting6.pdf
+
+
 -> REDHAT DOCS: 
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_for_real_time/8/html/optimizing_rhel_8_for_real_time_for_low_latency_operation/index
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9
@@ -111,9 +127,6 @@ Read Learning Amazon Web Services (AWS): A Hands-On Guide to the Fundamentals of
 https://on24static.akamaized.net/event/43/59/41/5/rt/1/documents/resourceList1701089888800/awseventdrivenautomationandoperationslatest1701089888800.pdf
 https://github.com/arpcefxl/aws-event-driven
 
--> Hands-on AWS Operations with ChatGPT
-https://on24static.akamaized.net/event/44/24/93/6/rt/1/documents/resourceList1705933749020/handsonawsoperationswithchatgpt1116231705933749020.pdf
-
 -> RegEx:
 https://learning.oreilly.com/library/view/mastering-regular-expressions/0596528124/
 https://learning.oreilly.com/library/view/sed-awk/1565922255/
@@ -177,14 +190,6 @@ Azure Network Engineer Associate (AZ-700) Bootcamp:
 -> https://on24static.akamaized.net/event/43/59/37/3/rt/1/documents/resourceList1701126839079/git42labs1701126839079.pdf - Git in Four Weeks - Week 2
 -> https://on24static.akamaized.net/event/43/59/37/3/rt/1/documents/resourceList1701043170963/gitin4weekspart11701043170963.pdf
 -> 
-
-
-:: CHATGPT (Gerenative Pre-Trained Transformation) ::
--> Prompt-Engineering-for-Everyone-with-ChatGPT-and-GPT4
-https://github.com/roshanahtina/Prompt-Engineering-for-Everyone-with-ChatGPT-and-GPT4
-https://learning.oreilly.com/videos/prompt-engineering-for/9781805122005/9781805122005-video2_1/
--> https://github.com/roshanahtina/quick-start-guide-to-llms
--> https://github.com/PacktPublishing/Python-A-Z-Learn-Python-By-Building-15-Projects-and-ChatGPT
 
 :: CCNA ::
 -> CCNA 200-301 Crash Course ( By Wendell Odom )
