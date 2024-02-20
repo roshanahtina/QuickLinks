@@ -66,6 +66,8 @@ https://on24static.akamaized.net/event/44/24/99/9/rt/1/documents/resourceList170
   LINUX NETWORKING & SECURITY FUNDAMENTALS - DAY TWO
   https://on24static.akamaized.net/event/44/25/00/1/rt/1/documents/resourceList1706212494999/lnsfslidesday2revh1706212494999.pdf
 
+-> Mastering systemd:
+https://on24static.akamaized.net/event/44/44/40/5/rt/1/documents/resourceList1706201782526/systemd512231706201782526.pdf
 
 -> RHCSA Crash Course
 https://on24static.akamaized.net/event/43/38/49/7/rt/1/documents/resourceList1698414414376/rhcsa911698414413682.pdf
