@@ -171,6 +171,9 @@ https://github.com/roshanahtina/microservices/blob/master/RESOURCE.TXT - KCNA, C
 CKAD labs: https://learning.oreilly.com/playlists/ea6ea0fc-d8e2-422c-94dd-a0a8f608d224/
 CKA lab: https://learning.oreilly.com/playlists/d6e3fe86-067c-4dc7-a36d-698802d0bdee/
 
+:: Kubernetes in 4 Hours ::
+https://on24static.akamaized.net/event/44/71/22/4/rt/1/documents/resourceList1708445347104/kubernetes.pdf
+https://github.com/sandervanvugt/kubernetes
 
 :: AZURE ::
 Azure Fundamentals (AZ-900) Bootcamp:
