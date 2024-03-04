@@ -165,6 +165,9 @@ https://github.com/AdminTurnedDevOps/PearsonCourses/blob/main/Kubernetes-Securit
 :: CKAD ::
 https://github.com/roshanahtina/curriculum.git --  Curriculum
 
+:: Certified Kubernetes Application Developer (CKAD) Crash Course ::
+https://on24static.akamaized.net/event/44/73/09/6/rt/1/documents/resourceList1707496228567/ckad20231707496228567.pdf
+
 Microservices:: RESOURCE.TXT
 https://github.com/roshanahtina/microservices/blob/master/RESOURCE.TXT - KCNA, CKA, CKAD
 # related labs
