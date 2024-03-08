@@ -198,7 +198,10 @@ Azure Network Engineer Associate (AZ-700) Bootcamp:
 -> https://on24static.akamaized.net/event/43/59/37/3/rt/1/documents/resourceList1701126828143/git41labs1701126828143.pdf - Git in Four Weeks - Week 1
 -> https://on24static.akamaized.net/event/43/59/37/3/rt/1/documents/resourceList1701126839079/git42labs1701126839079.pdf - Git in Four Weeks - Week 2
 -> https://on24static.akamaized.net/event/43/59/37/3/rt/1/documents/resourceList1701043170963/gitin4weekspart11701043170963.pdf
--> 
+
+- GIT In 4 Hours -
+-> https://on24static.akamaized.net/event/44/50/53/3/rt/1/documents/resourceList1709566368125/gitin4weekspart11709566368125.pdf
+-> https://github.com/skilldocs/git4/blob/main/git4-1-labs.pdf
 
 :: CCNA ::
 -> CCNA 200-301 Crash Course ( By Wendell Odom )
