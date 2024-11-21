@@ -62,6 +62,9 @@ https://on24static.akamaized.net/event/43/33/82/1/rt/1/documents/resourceList169
 https://on24static.akamaized.net/event/43/33/82/2/rt/1/documents/resourceList1697482662436/linuxfundamentals516231690989321545.pdf
 https://on24static.akamaized.net/event/44/22/49/5/rt/1/documents/resourceList1705675763785/linuxfundamentals5162311705675763785.pdf
 
+-> CCNA <-
+https://u.cisco.com/ - Welcome to Cisco U., Ros
+
 -> LINUX NETWORKING & SECURITY FUNDAMENTALS::
 https://github.com/daveprowse/lnsf
 https://on24static.akamaized.net/event/44/24/99/9/rt/1/documents/resourceList1706212346892/linkslnsfrevc1706212346892.pdf
