@@ -62,9 +62,6 @@ https://on24static.akamaized.net/event/43/33/82/1/rt/1/documents/resourceList169
 https://on24static.akamaized.net/event/43/33/82/2/rt/1/documents/resourceList1697482662436/linuxfundamentals516231690989321545.pdf
 https://on24static.akamaized.net/event/44/22/49/5/rt/1/documents/resourceList1705675763785/linuxfundamentals5162311705675763785.pdf
 
--> CCNA <-
-https://u.cisco.com/ - Welcome to Cisco U., Ros
-
 -> LINUX NETWORKING & SECURITY FUNDAMENTALS::
 https://github.com/daveprowse/lnsf
 https://on24static.akamaized.net/event/44/24/99/9/rt/1/documents/resourceList1706212346892/linkslnsfrevc1706212346892.pdf
@@ -225,6 +222,10 @@ Azure Network Engineer Associate (AZ-700) Bootcamp:
 -> https://on24static.akamaized.net/event/44/15/94/7/rt/1/documents/resourceList1704467426451/ccnaccday021704467426451.pdf
 -> https://on24static.akamaized.net/event/44/15/94/9/rt/1/documents/resourceList1704467339047/ccnaccday031704467339047.pdf
 -> https://on24static.akamaized.net/event/44/15/95/1/rt/1/documents/resourceList1704467392287/ccnaccday041704467392287.pdf
+
+-> CCNA <-
+https://u.cisco.com/ - Welcome to Cisco U., Ros
+https://learningnetwork.cisco.com/s/topic/0TO3i0000008jYHGAY/ccna-certification-community?t=1732173124695
 
 :: Terraform ::
 ->> Terraform: Getting Started
