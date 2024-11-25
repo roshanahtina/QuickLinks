@@ -239,6 +239,7 @@ https://learningnetwork.cisco.com/s/topic/0TO3i0000008jYHGAY/ccna-certification-
 -> Terraform Quick Start
 https://on24static.akamaized.net/event/46/89/42/7/rt/1/documents/resourceList1731019174047/tfquickstartrevb1731019174047.pdf
 https://github.com/roshanahtina/terraform-quickstart
+https://discord.com/channels/790744308617445406/862334487370530816
 
 -> RPMDB busted
 sudo mkdir /var/lib/rpm/backup
