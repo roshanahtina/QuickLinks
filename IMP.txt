@@ -136,6 +136,9 @@ Read Learning Amazon Web Services (AWS): A Hands-On Guide to the Fundamentals of
 https://on24static.akamaized.net/event/43/59/41/5/rt/1/documents/resourceList1701089888800/awseventdrivenautomationandoperationslatest1701089888800.pdf
 https://github.com/arpcefxl/aws-event-driven
 
+-> AWS Certified AI Practitioner (AIF-C01)
+https://on24static.akamaized.net/event/47/28/07/6/rt/1/documents/resourceList1733245300031/awsaipractitionercertcrashcourse1733245300031.pdf
+
 -> RegEx:
 https://learning.oreilly.com/library/view/mastering-regular-expressions/0596528124/
 https://learning.oreilly.com/library/view/sed-awk/1565922255/
