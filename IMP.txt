@@ -67,6 +67,9 @@ https://github.com/daveprowse/lnsf
 https://on24static.akamaized.net/event/44/24/99/9/rt/1/documents/resourceList1706212346892/linkslnsfrevc1706212346892.pdf
 https://on24static.akamaized.net/event/44/24/99/9/rt/1/documents/resourceList1706212334425/lnsfslidesday1revm1706212334425.pdf
 
+-> Networking Fundamentals
+https://on24static.akamaized.net/event/47/26/40/4/rt/1/documents/resourceList1732295686667/nfm1studentpacketpracnetnetv111720469741308.pdf
+
   LINUX NETWORKING & SECURITY FUNDAMENTALS - DAY TWO
   https://on24static.akamaized.net/event/44/25/00/1/rt/1/documents/resourceList1706212494999/lnsfslidesday2revh1706212494999.pdf
 
