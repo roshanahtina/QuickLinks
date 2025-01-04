@@ -251,6 +251,9 @@ https://discord.com/channels/790744308617445406/862334487370530816
 https://on24static.akamaized.net/event/47/32/11/5/rt/1/documents/resourceList1734362814317/classterraformgetstarted5hours1734362814317.pdf
 https://gist.github.com/spkane/0b2de0fa17adc3bb63495ecb3d2a88f9
 
+-> FOREMAN 
+https://github.com/betadots/foreman-training
+
 -> RPMDB busted
 sudo mkdir /var/lib/rpm/backup
 sudo cp -a /var/lib/rpm/__db* /var/lib/rpm/backup/
