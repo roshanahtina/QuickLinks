@@ -19,6 +19,8 @@ https://learning.oreilly.com/videos/prompt-engineering-for/9781805122005/9781805
 ChatGPT to Improve Your Writing:
 -> https://on24static.akamaized.net/event/44/32/02/3/rt/1/documents/resourceList1706493041740/chatgptwriting6.pdf
 
+Generative AI for everyone:
+-> https://on24static.akamaized.net/event/46/98/79/9/rt/1/documents/resourceList1736108781988/latestoreillygenerativeaiforeveryone1736108781988.pdf
 
 -> REDHAT DOCS: 
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_for_real_time/8/html/optimizing_rhel_8_for_real_time_for_low_latency_operation/index
@@ -154,8 +156,6 @@ https://pastebin.com/mDGGV9H2 - scripting nov23
 :: VMware ::
 -> VMware Hands-on Labs
 https://discovery.vmware.com/page/ds-hands-on-labs?menu=overview
-
-
 
 :: Kubernetes ::
 -> Securing Kubernetes for Production
