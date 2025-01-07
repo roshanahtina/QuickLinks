@@ -93,6 +93,8 @@ https://learning.oreilly.com/videos/linux-fundamentals-2nd/9780137929313/
 -> Ansible in 3 weeks
 https://on24static.akamaized.net/event/43/11/60/3/rt/1/documents/resourceList1697541567561/ansiblein3weeksstudentversion3211697541565541.pdf
 
+-> Ansible AI and EDA (Ansible Lightspeed)
+https://on24static.akamaized.net/event/47/66/22/6/rt/1/documents/resourceList1736259928611/ansibleai1736259928611.pdf
 
 -> Bash Scripting in 4 Hours
 https://on24static.akamaized.net/event/43/33/85/8/rt/1/documents/resourceList1698925382057/livebashscripting08231698925382057.pdf
