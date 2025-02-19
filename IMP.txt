@@ -90,7 +90,9 @@ https://github.com/roshanahtina/rhcsa/blob/master/resources.txt
 
 https://learning.oreilly.com/videos/linux-fundamentals-2nd/9780137929313/
 
--> Ansible in 3 weeks
+-> ANSIBLE: Good Practices for Ansible - GPA : https://redhat-cop.github.io/automation-good-practices/
+
+-> Ansible in 3 weeks 
 https://on24static.akamaized.net/event/43/11/60/3/rt/1/documents/resourceList1697541567561/ansiblein3weeksstudentversion3211697541565541.pdf
 
 -> Ansible AI and EDA (Ansible Lightspeed)
