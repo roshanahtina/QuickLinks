@@ -19,6 +19,10 @@ https://learning.oreilly.com/videos/prompt-engineering-for/9781805122005/9781805
 ChatGPT to Improve Your Writing:
 -> https://on24static.akamaized.net/event/44/32/02/3/rt/1/documents/resourceList1706493041740/chatgptwriting6.pdf
 
+:: Claude Code ::
+Claude Code for Everyone:
+https://on24static.akamaized.net/event/52/93/10/1/rt/1/documents/resourceList1779983503601/claudecodeforeveryoneoreillyfinal11779983503601.pdf
+
 Generative AI for everyone:
 -> https://on24static.akamaized.net/event/46/98/79/9/rt/1/documents/resourceList1736108781988/latestoreillygenerativeaiforeveryone1736108781988.pdf
 
