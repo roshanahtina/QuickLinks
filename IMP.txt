@@ -48,8 +48,9 @@ https://on24static.akamaized.net/event/43/12/45/6/rt/1/documents/resourceList169
 -> Linux Performance Optimization
 https://on24static.akamaized.net/event/43/47/01/0/rt/1/documents/resourceList1698335954860/linuxperformance73231698335953946.pdf
 
--> Linux Troubleshooting
+-> Linux Troubleshooting (Linux Performance Optimization)
 https://on24static.akamaized.net/event/43/47/02/6/rt/1/documents/resourceList1698935226186/linuxtroubleshooting613221698935226186.pdf
+https://on24static.akamaized.net/event/45/31/27/7/rt/1/documents/resourceList1716320423143/linuxperformance732311716320423143.pdf
 https://github.com/roshanahtina/Linux-Troubleshooting
  -> Fixing boot problem:
      Login Shell
